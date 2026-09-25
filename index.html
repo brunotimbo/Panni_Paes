@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de autoatendimento da Padaria Pão da Vila">
+    <title>Pão da Vila | Autoatendimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a class="logo" href="#inicio" aria-label="Pão da Vila - início">
+                <span class="logo-icone" aria-hidden="true">🥖</span>
+                <span>Pão da Vila</span>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#pedido">Pedido</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-conteudo">
+                <div>
+                    <p class="destaque">Autoatendimento</p>
+                    <h1>Seu pedido de padaria, simples e rápido.</h1>
+                    <p>Escolha pães, salgados, frios, doces, cafés e bebidas. Personalize quando necessário e acompanhe o valor do pedido em tempo real.</p>
+                    <a class="botao botao-primario" href="#cardapio">Iniciar pedido</a>
+                </div>
+                <div class="hero-ilustracao" aria-hidden="true">☕🥐</div>
+            </div>
+        </section>
+
+        <section class="secao" id="cardapio" aria-labelledby="titulo-cardapio">
+            <div class="container">
+                <div class="secao-titulo">
+                    <div>
+                        <p class="destaque">Cardápio</p>
+                        <h2 id="titulo-cardapio">Escolha seus produtos</h2>
+                    </div>
+                    <p>Use as categorias para encontrar os itens com mais facilidade.</p>
+                </div>
+
+                <div class="categorias" id="categorias" aria-label="Categorias do cardápio"></div>
+                <div class="grade-produtos" id="listaProdutos"></div>
+            </div>
+        </section>
+
+        <section class="secao pedido-secao" id="pedido" aria-labelledby="titulo-pedido">
+            <div class="container pedido-layout">
+                <div>
+                    <p class="destaque">Seu pedido</p>
+                    <h2 id="titulo-pedido">Confira antes de finalizar</h2>
+                    <p class="texto-apoio">Você pode aumentar, diminuir ou remover itens antes de concluir.</p>
+                </div>
+
+                <aside class="pedido-caixa" aria-label="Resumo do pedido">
+                    <div id="listaPedido" class="lista-pedido">
+                        <p class="pedido-vazio">Seu pedido ainda está vazio.</p>
+                    </div>
+
+                    <div class="pedido-total">
+                        <span>Total</span>
+                        <strong id="valorTotal">R$ 0,00</strong>
+                    </div>
+
+                    <button class="botao botao-finalizar" id="btnFinalizar" type="button" disabled>
+                        Finalizar pedido
+                    </button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Projeto Integrador — Desenvolvedor Web | Senac — Grupo 3</p>
+        </div>
+    </footer>
+
+    <div class="modal-fundo oculto" id="modalPersonalizacao" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+        <section class="modal">
+            <button class="modal-fechar" id="btnFecharModal" type="button" aria-label="Fechar">×</button>
+            <p class="destaque">Personalização</p>
+            <h2 id="tituloModal">Personalize seu café</h2>
+            <p id="nomeProdutoModal" class="modal-produto"></p>
+
+            <form id="formPersonalizacao">
+                <fieldset>
+                    <legend>Nível de açúcar</legend>
+                    <div class="opcoes">
+                        <label><input type="radio" name="acucar" value="Sem açúcar" checked> Sem açúcar</label>
+                        <label><input type="radio" name="acucar" value="Pouco açúcar"> Pouco</label>
+                        <label><input type="radio" name="acucar" value="Normal"> Normal</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nível de leite</legend>
+                    <div class="opcoes">
+                        <label><input type="radio" name="leite" value="Sem leite" checked> Sem leite</label>
+                        <label><input type="radio" name="leite" value="Pouco leite"> Pouco</label>
+                        <label><input type="radio" name="leite" value="Normal"> Normal</label>
+                    </div>
+                </fieldset>
+
+                <button class="botao botao-primario botao-largo" type="submit">Adicionar ao pedido</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="modal-fundo oculto" id="modalConfirmacao" role="dialog" aria-modal="true" aria-labelledby="tituloConfirmacao">
+        <section class="modal modal-confirmacao">
+            <div class="confirmacao-icone" aria-hidden="true">✓</div>
+            <h2 id="tituloConfirmacao">Pedido concluído!</h2>
+            <p>Seu pedido foi registrado nesta simulação. Obrigado por escolher a Pão da Vila.</p>
+            <button class="botao botao-primario" id="btnNovoPedido" type="button">Fazer novo pedido</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
