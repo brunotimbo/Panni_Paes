@@ -1,10 +1,10 @@
-﻿# 🥖 Sistema de Autoatendimento para Padaria
+﻿# Sistema de Autoatendimento para Padaria
 
 Projeto desenvolvido durante o curso de **Desenvolvedor Web do Senac**, como parte do **Projeto Prático: Sistemas Web para Gastronomia**.
 
 O projeto consiste no desenvolvimento de um sistema Web de autoatendimento para uma **padaria**, inspirado na experiência de totens de atendimento utilizados em estabelecimentos gastronômicos.
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
 A proposta é desenvolver uma interface simples e intuitiva que permita ao cliente realizar pedidos diretamente através de um sistema de autoatendimento.
 
@@ -12,7 +12,7 @@ A escolha de uma padaria foi baseada no grande fluxo de clientes e na frequênci
 
 O sistema busca simular uma alternativa de atendimento que possa tornar pedidos simples e recorrentes mais rápidos, contribuindo para a redução de filas e do tempo de espera.
 
-## 🎯 Objetivo
+## Objetivo
 
 Criar uma aplicação Front-End que permita ao usuário:
 
@@ -26,20 +26,20 @@ Criar uma aplicação Front-End que permita ao usuário:
 - Conferir o resumo do pedido;
 - Finalizar o pedido.
 
-## 🛒 Categorias
+## Categorias
 
 O sistema poderá apresentar produtos organizados em categorias como:
 
-- 🥖 Pães
-- 🥐 Salgados
-- 🧀 Frios
-- 🍰 Doces
-- ☕ Cafés
-- 🥤 Bebidas
+- Pães
+- Salgados
+- Frios
+- Doces
+- Cafés
+- Bebidas
 
 Alguns produtos poderão possuir opções adicionais de personalização. Bebidas como café, por exemplo, poderão permitir a seleção do nível de açúcar e leite.
 
-## 💻 Tecnologias
+## Tecnologias
 
 O projeto será desenvolvido utilizando:
 
@@ -57,7 +57,7 @@ Como o projeto não utiliza banco de dados ou armazenamento permanente, as infor
 
 Ao atualizar ou fechar a página, o estado do pedido poderá ser reiniciado.
 
-## 📁 Estrutura prevista
+## Estrutura prevista
 
 ```text
 projeto/
@@ -78,16 +78,16 @@ projeto/
 
 A estrutura poderá ser alterada conforme o desenvolvimento do projeto.
 
-## 👥 Equipe
+## Equipe
 
 **Grupo 3**
 
-- Bruno Luis Lima Timbó
-- Luca Emanuel Pires Soares
-- Camila Carolina Teixeira de Oliveira
-- Nivanda Evelyn Lima Freitas
+- Bruno Luis
+- Luca Emanuel
+- Camila Carolina
+- Nivanda Evelyn
 
-## 🏫 Curso
+## Curso
 
 **Desenvolvedor Web — Senac**
 
@@ -95,14 +95,14 @@ Projeto desenvolvido para aplicação prática dos conhecimentos de:
 
 `HTML5` • `CSS3` • `JavaScript` • `DOM` • `Flexbox` • `Grid` • `Responsividade`
 
-## 📅 Cronograma
+## Cronograma
 
 **02/10/2026** — Entrega da documentação  
 **16/10/2026** — Entrega do projeto funcionando e apresentação
 
-## 🚧 Status do projeto
+## Status do projeto
 
-🟡 **Em desenvolvimento**
+**Em desenvolvimento**
 
 Atualmente o projeto encontra-se na etapa de planejamento e documentação.
 
